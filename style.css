@@ -31,7 +31,7 @@ body {
 
 .hero-left .logo {
 width: 100%;
-  max-width: 300px; /* ne dépasse pas 300px */
+  max-width: 400px; /* ne dépasse pas 300px */
   height: auto;
   display: block;
   
