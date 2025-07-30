@@ -29,8 +29,10 @@ body {
 }
 
 .hero-left .logo {
- max-width: 100%;
+ width: 33.33%;
   height: auto;
+  max-width: 300px; /* limite sur grand écran */
+  min-width: 120px; /* évite qu'elle soit trop petite */
   margin-bottom: 3px;
   
 }
