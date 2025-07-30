@@ -136,6 +136,11 @@ margin-top:10px;  font-size: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .feature {
 background: linear-gradient(135deg, #F5F5F5, #DDDDDD);
