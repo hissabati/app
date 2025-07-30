@@ -24,16 +24,16 @@ body {
 
 .hero-left {
 
+ width: 33.33%; /* ou 30%, ou 300px si tu préfères */
   min-width: 200px;
   padding: 0px;
 }
 
 .hero-left .logo {
- width: 33.33%;
+width: 100%;
+  max-width: 300px; /* ne dépasse pas 300px */
   height: auto;
-  max-width: 300px; /* limite sur grand écran */
-  min-width: 120px; /* évite qu'elle soit trop petite */
-  margin-bottom: 3px;
+  display: block;
   
 }
 
@@ -81,7 +81,7 @@ body {
 
 .hero-right {
   
- flex: 1;
+ 
   min-width: 300px;
   text-align: center;
 }
