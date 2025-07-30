@@ -26,7 +26,7 @@ body {
 
  width: 33.33%; /* ou 30%, ou 300px si tu préfères */
   min-width: 200px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .hero-left .logo {
