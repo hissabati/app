@@ -23,10 +23,18 @@ body {
 }
 
 .hero-left {
-
- width: 33.33%; /* ou 30%, ou 300px si tu préfères */
   min-width: 200px;
-  padding: 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Par défaut : centré (pour mobile) */
+}
+
+/* ✅ Sur les grands écrans, aligner le logo à gauche */
+@media (min-width: 768px) {
+  .hero-left {
+    align-items: flex-start;
+  }
 }
 
 .hero-left .logo {
