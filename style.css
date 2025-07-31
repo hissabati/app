@@ -166,7 +166,9 @@ margin-top:10px;  font-size: 20px;
 }
 
 .feature {
-background: linear-gradient(135deg, #F5F5F5, #DDDDDD);
+/*background: linear-gradient(135deg, #F5F5F5, #DDDDDD);*/
+  background: linear-gradient(135deg, #E9FAF6, #D1F2EC);
+
   border-radius: 16px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
    
