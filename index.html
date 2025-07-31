@@ -9,6 +9,11 @@
  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </head>
@@ -60,15 +65,21 @@
     </div>
   </section>
 
-  <section class="screenshots">
-    <h2>Captures d'écran<br><span class="arabic">لقطات الشاشة</span></h2>
-    <div class="screens reveal">
-      <img src="images/screen1.png" alt="Contract" />
-      <img src="images/screen2.png" alt="Invoices" />
-      <img src="images/screen3.png" alt="Dashboard" />
-      <img src="images/screen4.png" alt="Dashboard" />
-    </div></div>
-  </section>
+ <section class="screenshots">
+  <h2>Captures d'écran<br><span class="arabic">لقطات الشاشة</span></h2>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/screen1.png" alt="Contract" /></div>
+      <div class="swiper-slide"><img src="images/screen2.png" alt="Invoices" /></div>
+      <div class="swiper-slide"><img src="images/screen3.png" alt="Dashboard" /></div>
+      <div class="swiper-slide"><img src="images/screen4.png" alt="Dashboard" /></div>
+    </div>
+
+    <!-- Pagination (petits points) -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
   <footer class="app-footer">
   <div class="footer-content">
     <p>
