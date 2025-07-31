@@ -193,6 +193,18 @@ background: linear-gradient(135deg, #F5F5F5, #DDDDDD);
   color: #555;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Quand visible à l'écran */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .screenshots {
   padding: 40px 20px;
   text-align: center;
