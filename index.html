@@ -33,7 +33,7 @@
   <section class="features">
     <h2>Fonctionnalités<br><span class="arabic">الميزات</span></h2>
     <div class="features-grid">
-      <div class="feature">
+      <div class="feature reveal">
         <i class="fas fa-file-invoice-dollar"></i>
         <h3>Créer vos factures en quelques secondes<br><span class="arabic">إنشاءفواتير في لحظات</span></h3>
       </div>
@@ -88,5 +88,23 @@
     </p>
   </div>
 </footer>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    reveals.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 100; // Plus petit = déclenche plus tôt
+
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll); // Pour les éléments visibles dès le début
+</script>
 </body>
 </html>
