@@ -209,19 +209,44 @@ margin-top:10px;  font-size: 20px;
 
 .screenshots {
   padding: 40px 20px;
-  text-align: center;
+  background-color: #fefefe;
 }
 
-.screenshots h2 {
+.screenshots-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.screenshots-text {
+  flex: 1 1 300px;
+  max-width: 450px;
+}
+
+.screenshots-text h2 {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
-.screenshots .arabic {
- font-family: 'Tajawal', sans-serif;
-  display: block;
+.screenshots-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.screenshots-text .arabic {
+  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  direction: rtl;
+}
+
+.screenshots-carousel {
+  flex: 1 1 300px;
+  min-width: 0;
 }
 
 .screens {
@@ -284,21 +309,61 @@ margin-top:10px;  font-size: 20px;
   vertical-align: middle;
 }
 
+.screenshots {
+  padding: 40px 20px;
+  background-color: #fefefe;
+}
+
+.screenshots-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.screenshots-text {
+  flex: 1 1 300px;
+  max-width: 450px;
+}
+
+.screenshots-text h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.screenshots-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.screenshots-text .arabic {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  direction: rtl;
+}
+
+.screenshots-carousel {
+  flex: 1 1 300px;
+  min-width: 0;
+}
+
+/* Swiper styling (déjà inclus si tu suis l'étape précédente) */
 .swiper {
   width: 100%;
   padding: 20px 0;
 }
 
 .swiper-slide {
-  text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .swiper-slide img {
   width: 160px;
-  height: auto;
-  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -307,5 +372,14 @@ margin-top:10px;  font-size: 20px;
 .swiper-slide img:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .screenshots-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 }
 
