@@ -230,18 +230,24 @@ margin-top:10px;  font-size: 20px;
 .screenshots-text h2 {
   font-size: 24px;
   margin-bottom: 16px;
+  text-align:center;
+  color:#1E1E1E;
 }
 
 .screenshots-text p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
+    text-align:center;
+  color:#1E1E1E;
 }
 
 .screenshots-text .arabic {
   font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   direction: rtl;
+    text-align:center;
+  color:#1E1E1E;
 }
 
 .screenshots-carousel {
