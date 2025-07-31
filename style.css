@@ -281,3 +281,29 @@ background: linear-gradient(135deg, #F5F5F5, #DDDDDD);
   font-size: 18px;
   vertical-align: middle;
 }
+
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
