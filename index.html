@@ -117,5 +117,19 @@
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll); // Pour les éléments visibles dès le début
 </script>
+
+      <script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
 </body>
 </html>
