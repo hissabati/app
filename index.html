@@ -28,6 +28,27 @@
       <a href="#" class="btn">
         <i class="fas fa-download"></i>
         Télécharger l'application mobile<span class="arabic">تحميل</span></a>
+
+      <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    let apkUrl = "";
+
+    if (/android/i.test(userAgent)) {
+      if (/armv8|aarch64|arm64/i.test(userAgent)) {
+        apkUrl = "https://hissabati.github.io/app/download/hissabati_64-1.apk";
+      } else if (/armv7|armeabi/i.test(userAgent)) {
+        apkUrl = "https://hissabati.github.io/app/download/hissabati_32.apk";
+      } else {
+        apkUrl = "https://hissabati.github.io/app/download/hissabati_64-1.apk";
+      }
+    } else {
+      apkUrl = "https://hissabati.github.io/app/download/hissabati_64-1.apk";
+    }
+
+    document.getElementById("downloadApp").setAttribute("href", apkUrl);
+  });
+</script>
     </div>
     <div class="hero-right">
       <img src="images/phone1.png" alt="Capture 1" class="phone main">
