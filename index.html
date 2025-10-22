@@ -36,14 +36,14 @@
 
     if (/android/i.test(userAgent)) {
       if (/armv8|aarch64|arm64/i.test(userAgent)) {
-        apkUrl = "https://hissabati.github.io/app/download/Hissabati_64-1.apk";
+        apkUrl = "https://github.com/hissabati/app/releases/download/v1.0.0/Hissabati-64.apk";
       } else if (/armv7|armeabi/i.test(userAgent)) {
-        apkUrl = "https://hissabati.github.io/app/download/Hissabati_32.apk";
+        apkUrl = "https://github.com/hissabati/app/releases/download/v1.0/Hissabati_32.apk";
       } else {
-        apkUrl = "https://hissabati.github.io/app/download/Hissabati_64-1.apk";
+        apkUrl = "https://github.com/hissabati/app/releases/download/v1.0.0/Hissabati-64.apk";
       }
     } else {
-      apkUrl = "https://hissabati.github.io/app/download/Hissabati_64-1.apk";
+      apkUrl = "https://github.com/hissabati/app/releases/download/v1.0.0/Hissabati-64.apk";
     }
 
     document.getElementById("downloadApp").setAttribute("href", apkUrl);
